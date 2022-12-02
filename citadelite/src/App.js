@@ -4,12 +4,12 @@ import { WorldIDWidget } from '@worldcoin/id'
 
 function App() {
   return (
-    <div class="App bg-black">   
+
+    <div class="App bg-black w">   
        <div class="text-center mx-auto ">
       <h1 class="text-white">Citadelite</h1>
       <p class="text-white">The only place in the internet where only, real humans live</p>
-    </div>
-    <WorldIDWidget
+      <WorldIDWidget
   actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org
   signal="my_signal"
   enableTelemetry
@@ -17,6 +17,10 @@ function App() {
   onError={(error) => console.error(error)}
   debug={true} // to aid with debugging, remove in production
 />
+       </div>
+    
+<iframe src="https://embed.lottiefiles.com/animation/94789" ></iframe>
+
     </div>
   );
 }
