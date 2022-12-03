@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -78,6 +84,16 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.navui{
+  padding: 20px;
+}
+
+.navlogo{
+  font-weight: bolder;
+
+}
+
 
 @tailwind base;
 @tailwind components;
