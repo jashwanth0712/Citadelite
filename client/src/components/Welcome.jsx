@@ -52,7 +52,8 @@ const Welcome = ()=>{
                 <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
                    
                     <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
-                    <Input placeholder="photo url" name="keyword" type="text" handleChange={handleChange}/>
+                    {/* <Input placeholder="photo url" name="keyword" type="text" handleChange={handleChange}/> */}
+                    <Input placeholder="image" name="keyword" type="file" handleChange={handleChange}/>
                     <Input placeholder="Enter caption" name="message" type="text" handleChange={handleChange}/>
                     <div className="h-[1px] w-full bg-gray-400 my-2"/>
                     {
