@@ -10,7 +10,7 @@ function App() {
       <h1 class="text-white">Citadelite</h1>
       <p class="text-white">The only place in the internet where only, real humans live</p>
       <WorldIDWidget
-  actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org
+  actionId="wid_staging_edf49bced32c6eeab53b9b139cdfa114" // obtain this from developer.worldcoin.org
   signal="my_signal"
   enableTelemetry
   onSuccess={(verificationResponse) => console.log(verificationResponse)} // pass the proof to the API or your smart contract
