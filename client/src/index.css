@@ -6,12 +6,6 @@
   box-sizing: border-box;
 }
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -24,7 +18,8 @@ body {
   background-image: 
     radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
     radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    radial-gradient(at 100% 0%, rgb(15, 148, 177) 0, transparent 50%);
+    
 }
 
 .gradient-bg-services {
@@ -36,16 +31,14 @@ body {
 
 .gradient-bg-transactions {
   background-color: #0f0e13;
-  background-image: 
-    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+  background: radial-gradient(circle at center, #0f0e13, #facc15 25%, #0f0e13 50%);
 }
 
 .gradient-bg-footer {
   background-color: #0f0e13;
   background-image: 
     radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
-    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+    radial-gradient(at 50% 150%, rgb(15, 148, 177) 0, transparent 50%);
 }
 
 .blue-glassmorphism {
@@ -84,16 +77,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.navui{
-  padding: 20px;
-}
-
-.navlogo{
-  font-weight: bolder;
-
-}
-
 
 @tailwind base;
 @tailwind components;

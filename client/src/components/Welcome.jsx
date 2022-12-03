@@ -39,11 +39,11 @@ const Welcome = ()=>{
     return(
         <div className="flex-column  justify-center items-center">
             {/* ------------------------------------- */}
-            <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-            <p className="text-white text-2xl text-center mx-2 cursor-pointer navui navlogo">Citadelite</p>
-        <p className="text-gray-300 text-base text-center mx-2 cursor-pointer navui hover:text-gray-500">Home</p>
-        <p className="text-gray-300 text-base text-center mx-2 cursor-pointer navui hover:text-gray-500">Chat</p>
-        <p className="text-gray-300 text-base text-center mx-2 cursor-pointer navui hover:text-gray-500">Video call</p>
+            <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 m-5 w-full">
+            <p className="text-white text-2xl text-center mx-2 mt-3 cursor-pointer navui navlogo">Citadelite</p>
+        <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Home</p>
+        <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Chat</p>
+        <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Video call</p>
 
         {!currentAccount && <button
                 type="button "
