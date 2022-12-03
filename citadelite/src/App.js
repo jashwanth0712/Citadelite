@@ -1,10 +1,13 @@
+import './Navigation/navbar.js'
 
 import './App.css';
 import { WorldIDWidget } from '@worldcoin/id'
+import Navbar from './Navigation/navbar';
 
 function App() {
   return (
-
+    <>
+<Navbar/>
     <div class="App bg-black w">   
        <div class="text-center mx-auto ">
       <h1 class="text-white">Citadelite</h1>
@@ -22,6 +25,7 @@ function App() {
 <iframe src="https://embed.lottiefiles.com/animation/94789" ></iframe>
 
     </div>
+    </>
   );
 }
 
