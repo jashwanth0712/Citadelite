@@ -7,7 +7,6 @@ const App =()=> {
         <Navbar/>
         <Welcome/>
       </div>
-      <Services/>
       <Transactions/>
       <Footer/>
     </div>
