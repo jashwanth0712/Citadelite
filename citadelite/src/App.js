@@ -1,31 +1,24 @@
-import './Navigation/navbar.js'
-
+import logo from './logo.svg';
 import './App.css';
-import { WorldIDWidget } from '@worldcoin/id'
-import Navbar from './Navigation/navbar';
 
 function App() {
   return (
-    <>
-<Navbar/>
-    <div class="App bg-black w">   
-       <div class="text-center mx-auto ">
-      <h1 class="text-white">Citadelite</h1>
-      <p class="text-white">The only place in the internet where only, real humans live</p>
-      <WorldIDWidget
-  actionId="wid_staging_edf49bced32c6eeab53b9b139cdfa114" // obtain this from developer.worldcoin.org
-  signal="my_signal"
-  enableTelemetry
-  onSuccess={(verificationResponse) => console.log(verificationResponse)} // pass the proof to the API or your smart contract
-  onError={(error) => console.error(error)}
-  debug={true} // to aid with debugging, remove in production
-/>
-       </div>
-    
-<iframe src="https://embed.lottiefiles.com/animation/94789" ></iframe>
-
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
-    </>
   );
 }
 
