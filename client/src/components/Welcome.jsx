@@ -3,11 +3,13 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import {SiEthereum} from 'react-icons/si';
 import {BsInfoCircle} from 'react-icons/bs';
 import { shortenAddress } from "../utils/shortenAddress";
+import { WorldIDWidget } from '@worldcoin/id';
 
 import {Loader} from './';
 import { TransactionContext } from "../context/TransactionContext";
 const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 const Input =({placeholder,name,type,value,handleChange})=>(
+    
     <input
     placeholder={placeholder} 
     type={type}
@@ -44,6 +46,14 @@ const Welcome = ()=>{
         <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Home</p>
         <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Chat</p>
         <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Video call</p>
+        <WorldIDWidget
+            actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org
+            signal="my_signal"
+            enableTelemetry
+            onSuccess={(verificationResponse) => console.log(verificationResponse)} // pass the proof to the API or your smart contract
+            onError={(error) => console.error(error)}
+            debug={true} // to aid with debugging, remove in production 
+/>
 
         {!currentAccount && <button
                 type="button "
