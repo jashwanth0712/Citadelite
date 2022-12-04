@@ -3,7 +3,9 @@ import {TransactionContext} from '../context/TransactionContext';
 import dummyData from '../utils/dummyData';
 import useFetch from '../hooks/useFetch';
 import { shortenAddress } from "../utils/shortenAddress";
-
+const array=['https://www.shutterstock.com/image-illustration/3d-render-cute-childish-face-260nw-1046818417.jpg',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuOcWA6Ld2Zo8fD7uGm48apfMd4jcUDLJaWJ5kLU&s',
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5l5WvU8W7zM4IVFcBc7MR_12YrOnDGRlYnJ7Hfuw&s']
 
 const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword, amount, url }) => {
     
@@ -39,7 +41,7 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
       )}
       </div>
       <img
-          src={keyword}
+          src={array[Math.floor(Math.random() * array.length)]}
           alt="nature"
           className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
         />
