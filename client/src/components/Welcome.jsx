@@ -43,6 +43,8 @@ const Welcome = ()=>{
         <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Home</p>
         <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Chat</p>
         <p className="text-gray-300 text-base text-center mx-2 mt-3 cursor-pointer navui hover:text-gray-500">Video call</p>
+      <div className="bg-white p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl">
+       
         <WorldIDWidget
             actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org
             signal="my_signal"
@@ -51,7 +53,7 @@ const Welcome = ()=>{
             onError={(error) => console.error(error)}
             debug={true} // to aid with debugging, remove in production 
 />
-
+</div>
         {!currentAccount && <button
                 type="button "
                 onClick={connectWallet}
