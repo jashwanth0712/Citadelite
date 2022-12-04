@@ -46,7 +46,10 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
           className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
         />
       <div className="bg-black p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl">
-        <p className="text-[#37c7da] font-bold">{timestamp}</p>
+        <p className="text-[#37c7da] font-bold">{<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+      </svg>} 4/12/22 05:19:17
+        </p>
       </div>
 
 
